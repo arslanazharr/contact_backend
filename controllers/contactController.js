@@ -17,7 +17,7 @@ const addContactRecord = async (req, res) => {
 
     await newContact.save();
 
-    res.status(200).json({ message: "Message Successful", data: newContact });
+    res.status(200).json({ message: "Message Successful!" });
   } catch (error) {
     console.error("Error saving contact record:", error);
     res.status(500).json({ message: "Internal Server Error" });
